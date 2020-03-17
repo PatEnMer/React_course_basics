@@ -1,11 +1,13 @@
 import React from 'react';
 import ListWrapper from './components/ListWrapper/ListWrapper';
 import './index.css';
+import MyComponent from './components/ListWrapper/MyComponent/MyComponent';
 
 const App = () => (
-    <div>
-        <ListWrapper />
-    </div>
+	<div>
+		<MyComponent />
+		<ListWrapper />
+	</div>
 );
 
 export default App;
