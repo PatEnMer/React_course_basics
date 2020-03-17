@@ -1,9 +1,17 @@
-import React from 'react';
+import React from "react";
 
 class MyComponent extends React.Component {
-	render() {
-		return <h1>Hey, hey</h1>;
-	}
+  state = {
+    text: "test state"
+  };
+  render() {
+    return (
+      <>
+        <input placeholder="your text" onChange={this.handleChange} />
+        <h1>{this.state.text}</h1>
+      </>
+    );
+  }
 }
 
 export default MyComponent;
