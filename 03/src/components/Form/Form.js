@@ -1,5 +1,5 @@
 import React from "react";
-import "./Form.css";
+import "./Form.module.scss";
 
 const Form = ({ submitFn }) => (
   <div className="form__wrapper">
