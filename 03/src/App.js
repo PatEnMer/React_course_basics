@@ -6,13 +6,13 @@ import Form from "./components/Form/Form";
 const initialStateItems = [
   {
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/1200px-Black_hole_-_Messier_87_crop_max_res.jpg",
+      "https://pbs.twimg.com/profile_images/1166344766210150401/amRnWzl-_400x400.jpg",
     name: "Dan Abramov",
     twitterLink: "https://twitter.com/dan_abramov"
   },
   {
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/1200px-Black_hole_-_Messier_87_crop_max_res.jpg",
+      "https://pbs.twimg.com/profile_images/1166030195834273794/pBb6hjVb_400x400.jpg",
     name: "Ryan Florence",
     description:
       "Making React accessible for users and developers at https://reach.tech . Online learning, workshops, OSS, and consulting.",
@@ -20,7 +20,7 @@ const initialStateItems = [
   },
   {
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/1200px-Black_hole_-_Messier_87_crop_max_res.jpg",
+      "https://pbs.twimg.com/profile_images/1095819845382299649/zG-2_UHS_400x400.jpg",
     name: "Michael Jackson",
     description:
       "Maker. Co-author of React Router. Working on @ReactTraining. Created @unpkg. Head over heels for @cari.",
@@ -28,7 +28,7 @@ const initialStateItems = [
   },
   {
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/1200px-Black_hole_-_Messier_87_crop_max_res.jpg",
+      "https://pbs.twimg.com/profile_images/759557613445001216/6M2E1l4q_400x400.jpg",
     name: "Kent C. Dodds",
     description:
       "Making software development more accessible · Husband, Father, Latter-day Saint, Teacher, OSS, GDE, @TC39 · @PayPalEng @eggheadio @FrontendMasters · #JS",
