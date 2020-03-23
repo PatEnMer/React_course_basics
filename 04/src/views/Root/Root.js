@@ -1,20 +1,19 @@
 import React from "react";
-import List from "./components/List/List";
 import "./index.css";
-import Form from "./components/Form/Form";
 
 const initialStateItems = [
   {
-    image: "https://pbs.twimg.com/profile_images/906557353549598720/oapgW_Fp.jpg",
+    image:
+      "https://pbs.twimg.com/profile_images/1166344766210150401/amRnWzl-_400x400.jpg",
     name: "Dan Abramov",
     description: "React core member",
     twitterLink: "https://twitter.com/dan_abramov"
   }
 ];
 
-class App extends React.Component {
+class Root extends React.Component {
   state = {
-    items: [...initialStateItems],
+    items: [...initialStateItems]
   };
 
   addItem = e => {
@@ -35,13 +34,8 @@ class App extends React.Component {
   };
 
   render() {
-    return (
-      <div>
-        <List items={this.state.items} />
-        <Form submitFn={this.addItem} />
-      </div>
-    );
+    return <div>Hello, hello, can you hear me?</div>;
   }
 }
 
-export default App;
+export default Root;
