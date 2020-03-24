@@ -1,9 +1,10 @@
 import React from "react";
 import "./index.css";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ArticlesView from "../ArticlesView/ArticlesView";
 import TwittersView from "../TwittersView/TwittersView";
 import NotesView from "../NotesView/NotesView";
+import Navigation from "../../components/Navigation/Navigation";
 
 const initialStateItems = [
   {
@@ -41,10 +42,13 @@ class Root extends React.Component {
     return (
       <BrowserRouter>
         <>
+          <Navigation />
           <h1>Hello, hello, can you hear me?</h1>
-          <Route exact path="/" component={TwittersView} />
-          <Route path="/articles" component={ArticlesView} />
-          <Route path="/notes" component={NotesView} />
+          <Switch>
+            <Route exact path="/" component={TwittersView} />
+            <Route path="/articles" component={ArticlesView} />
+            <Route path="/notes" component={NotesView} />
+          </Switch>
         </>
       </BrowserRouter>
     );
