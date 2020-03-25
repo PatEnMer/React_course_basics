@@ -1,11 +1,12 @@
-import React from "react";
-import styles from "./Modal.module.scss";
-import Form from "../Form/Form";
+import React from 'react';
+import styles from './Modal.module.scss';
+import Form from '../Form/Form';
 
-const Modal = () => (
+const Modal = ({ closeModalFn }) => (
   <div className={styles.wrapper}>
+    <button className={styles.closeButton} onClick={closeModalFn} />
     <Form />
-  </div>
+  </div>  
 );
 
 export default Modal;
