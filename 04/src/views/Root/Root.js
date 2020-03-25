@@ -1,15 +1,16 @@
 import React from "react";
 import "./index.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import ArticlesView from "../ArticlesView/ArticlesView";
 import TwittersView from "../TwittersView/TwittersView";
+import ArticlesView from "../ArticlesView/ArticlesView";
 import NotesView from "../NotesView/NotesView";
 import Header from "../../components/Header/Header";
+import Modal from "../../components/Modal/Modal";
 
 const initialStateItems = [
   {
     image:
-      "https://pbs.twimg.com/profile_images/1166344766210150401/amRnWzl-_400x400.jpg",
+      "https://pbs.twimg.com/profile_images/906557353549598720/oapgW_Fp.jpg",
     name: "Dan Abramov",
     description: "React core member",
     twitterLink: "https://twitter.com/dan_abramov"
@@ -43,12 +44,13 @@ class Root extends React.Component {
       <BrowserRouter>
         <>
           <Header />
-          <h1>Hello, hello, can you hear me?</h1>
+          <h1>hello world</h1>
           <Switch>
             <Route exact path="/" component={TwittersView} />
             <Route path="/articles" component={ArticlesView} />
             <Route path="/notes" component={NotesView} />
           </Switch>
+          <Modal />
         </>
       </BrowserRouter>
     );

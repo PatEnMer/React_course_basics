@@ -1,5 +1,7 @@
-import React from "react";
+import React from 'react';
 
-const TwittersView = () => <p>This is an Twitter View</p>;
+const TwittersView = () => (
+  <p>This is an Twitters View</p>
+);
 
 export default TwittersView;
